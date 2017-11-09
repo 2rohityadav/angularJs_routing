@@ -5,7 +5,6 @@ var app = angular.module('myApp', [
     '$routeProvider',
     '$locationProvider',
     function($routeProvider, $locationProvider) {
-      $locationProvider.html5Mode(true).hashPrefix('!');
       $routeProvider
         .when('/', {
           templateUrl: 'views/home.html',
@@ -20,7 +19,12 @@ var app = angular.module('myApp', [
           controller: 'ContactCtrl'
         })
         .otherwise({
-          redirectTo: "views/404.html"
+          redirectTo: 'views/404.html'
+        })
+
+        // $locationProvider.html5Mode(true).hashPrefix('!');
+        $locationProvider.html5Mode({
+          enabled: true, requireBase: false
         })
     }
   ]);
