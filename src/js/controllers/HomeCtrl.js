@@ -3,6 +3,8 @@ var app = angular.module('myApp')
     '$scope',
     function($scope) {
       console.log('Loaded.');
-      $scope.message = 'Hello World Test';
+      $scope.title = "Home Page";
+      $scope.message = "Work hard - Play hard";
+      $scope.readMoreBtn = "Read More";
     }
   ]);
