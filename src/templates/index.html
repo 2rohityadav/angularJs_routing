@@ -13,8 +13,37 @@
 </head>
 
 <body>
+  <div class="site-wrapper">
 
-  <ng-view class="view"></ng-view>
+        <div class="site-wrapper-inner">
+
+          <div class="cover-container">
+
+            <header class="masthead clearfix">
+              <div class="inner">
+                <h3 class="masthead-brand">Cover</h3>
+                <nav class="nav nav-masthead">
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link" href="#">About</a>
+                </nav>
+              </div>
+            </header>
+
+            <main role="main" class="inner cover">
+              <ng-view class="view"></ng-view>
+            </main>
+
+            <footer class="mastfoot">
+              <div class="inner">
+                <p>Developd By <a href="http://imrohit.in/">@rohityadav</a>.</p>
+              </div>
+            </footer>
+
+          </div>
+
+        </div>
+
+      </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
