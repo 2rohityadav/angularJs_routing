@@ -5,6 +5,8 @@ const browserSync = require('browser-sync').create();
 const scripts = require('./scripts');
 const styles = require('./styles');
 
+// npm i -S connect-history-api-fallback
+const historyApiFallback = require('connect-history-api-fallback');
 // Some pointless comments for our project.
 
 var devMode = false;
@@ -40,10 +42,11 @@ gulp.task('build', function() {
 });
 
 gulp.task('browser-sync', function() {
-    browserSync.init(null, {
+    browserSync.init({
         open: false,
         server: {
             baseDir: 'dist',
+            middleware: [ historyApiFallback() ]
         }
     });
 });

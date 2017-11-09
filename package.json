@@ -1,16 +1,19 @@
 {
-  "name": "helloworld",
+  "name": "angularjsApp",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "start": "gulp start",
+  "prestart": "npm i --silent",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "rohityadav",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
+    "connect-history-api-fallback": "^1.5.0",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
