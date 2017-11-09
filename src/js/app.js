@@ -15,7 +15,7 @@ var app = angular.module('myApp', [
           templateUrl: 'views/about.html',
           controller: 'AboutCtrl'
         })
-        .when('/contact', {
+        .when('/contactme', {
           templateUrl: 'views/contact.html',
           controller: 'ContactCtrl'
         })
