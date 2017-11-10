@@ -24,9 +24,9 @@
               <div class="inner">
                 <h3 class="masthead-brand">Rohit</h3>
                 <nav class="nav nav-masthead" ng-controller="NavCtrl">
-                  <a class="nav-link" ng-class="{active: isActive('/') }" href="/">Home</a>
-                  <a class="nav-link" ng-class="{active: isActive('/about') }" href="/about">About</a>
-                  <a class="nav-link" ng-class="{active: isActive('/contactme') }"href="/contactme">Contact Me</a>
+                  <a ng-class="{active: isActive('/'), 'nav-link': true }" href="/">Home</a>
+                  <a ng-class="{active: isActive('/about'), 'nav-link': true }" href="/about">About</a>
+                  <a ng-class="{active: isActive('/contactme'), 'nav-link': true }" href="/contactme">Contact Me</a>
                 </nav>
               </div>
             </header>
